@@ -23,7 +23,7 @@ namespace login_system_2030.Controllers
         }
 
         // This is the endpoint to register a new user
-        [HttpPost("register")]\
+        [HttpPost("register")]
 
         public IActionResult Register(RegisterDto dto)
         {

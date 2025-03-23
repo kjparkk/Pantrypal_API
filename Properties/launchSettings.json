@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "login_system_2030": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:56033;http://localhost:56034"
+    }
+  }
+}
