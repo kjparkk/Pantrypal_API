@@ -103,6 +103,11 @@ namespace login_system_2030.Controllers
                 // If something goes wrong, send an error message
                 return StatusCode(500, $"Something went wrong while logging in: {ex.Message}");
             }
+
         }
+
+        [HttpGet("test")]
+        public IActionResult Test() => Ok("API is live!");
+
     }
 }
