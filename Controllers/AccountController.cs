@@ -56,7 +56,7 @@ namespace login_system_2030.Controllers
                 var hashedPassword = BCrypt.Net.BCrypt.HashPassword(dto.Password);
 
                 // Create a new user using the info from the form
-                var user = new User(dto.Username, dto.Email, hashedPassword);
+                var user = new User(dto.Username, hashedPassword, dto.Email);
 
                 // Add the user to the database
                 _context.Users.Add(user);
@@ -103,7 +103,6 @@ namespace login_system_2030.Controllers
                 // If something goes wrong, send an error message
                 return StatusCode(500, $"Something went wrong while logging in: {ex.Message}");
             }
-
         }
 
         [HttpGet("test")]
